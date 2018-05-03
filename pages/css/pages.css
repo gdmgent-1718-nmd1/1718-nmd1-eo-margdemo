@@ -16,17 +16,47 @@ img {
 }
 
 /* Voeg jouw css hieraan toe */
+* {
+    box-sizing: border-box;
+}
+
+.col-3{width: 30%;}
+.col-4{width: 30%;}
+.col-5{width: 30%;}
+.col-6{width: 30%;}
+.col-9{width: 30%;}
+.col-27{width: 30%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 100px;
+    border: 1px solid black;
+}
 
 h1{
     text-align: center;
-    text-decoration-color: black;
+    text-decoration-color:grey;
+    color: white;
 }
-
+h3{
+    color: black;
+    text-align: center;
+}
 p{
-    text-align: center
+    text-align: center;
+    color: black;
 }
 header{
     overflow: hidden;
-    background-color:black;
-    padding: 20px 10px;
+    background-color:pink;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
