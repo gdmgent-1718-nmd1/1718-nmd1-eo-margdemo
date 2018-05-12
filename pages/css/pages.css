@@ -14,33 +14,39 @@ body {
     line-height: 1.5em;
     padding: 25px;
 }
-body, html {
-    height: 100%;
+
+/* Three columns side by side*/
+.column {
+    float: left;
+    width: 80%;
+    margin-bottom: 16px;
+    padding: 0 10px;
 }
 
-/* The festival image */
-header-image {
-    /* The image used */
-    background-image: url("mdmfestival.jpg");
-
-    /* Set a specific height */
-    height: 50%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+/*Displays the columns below each other instead of side by side on small screens*/
+@media screen and (max-width: 600px) {
+    .column {
+        width: 60%;
+        display: block;
+    }
 }
 
-/* Place text in the middle of the image */
-header-text {
-    text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Clear floats */
+.container::after, .row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
 }
 
 
@@ -53,10 +59,12 @@ header-text {
     margin: 25x;
 }
 
-.img{
+img{
     float: right;
     width: 200;
     height: 100;
+    border-radius: 50%;
+
 }
 
 
@@ -75,7 +83,7 @@ h4{
     text-align: left;
 }
 p{
-    text-align: center;
+    text-align: left;
     color: black;
 }
 
