@@ -1,6 +1,6 @@
-* {
-    box-sizing: border-box;
-}
+
+
+
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -14,68 +14,83 @@ body {
     line-height: 1.5em;
     padding: 25px;
 }
-
-img {
-    max-width: 100%; /* Afbeeldingen responsive maken */
+body, html {
+    height: 100%;
 }
 
-/* Voeg jouw css hieraan toe */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+/* The festival image */
+header-image {
+    /* The image used */
+    background-image: url("mdmfestival.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-.column img{
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-@media screen and (max-width: 800px) {
-    .column{
-    flex: 50%;
-    max-width: 50%;
-    }
-    
+/* Place text in the middle of the image */
+header-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-@media screen and (max-width: 600px) {
-    .column{
-        flex: 100%;
-    max-width: 100%; 
-    }
 
+.division1 {
+    background-color: lightblue;
+    width: 500px;
+    height: 600px;
+    border: 25px white;
+    padding: 25px;
+    margin: 25x;
 }
+
+.img{
+    float: right;
+    width: 200;
+    height: 100;
+}
+
+
 
 h1{
     text-align: center;
     text-decoration-color:grey;
-    color: white;
+    color: #D657C9;
 }
 h3{
     color: black;
     text-align: center;
 }
+h4{
+    color: black;
+    text-align: left;
+}
 p{
     text-align: center;
     color: black;
 }
-header{
-    overflow: hidden;
-    background-color:pink;
-    text-align: left;
-    padding: 20px;
-    width: 100%;
+
+/*content*/
+div.container {
+    width: 900px;
+    border-left: 0.5px solid lightblue;
+    border-right: 0.5px solid lightblue;
+    margin:0 auto;
+    background-color: white;
 }
 
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
+
+
+
+
