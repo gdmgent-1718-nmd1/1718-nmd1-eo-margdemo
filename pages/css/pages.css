@@ -10,7 +10,7 @@ body {
     -moz-font-feature-settings: 'kern';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #333;
+    color: #000000;
     line-height: 1.5em;
     padding: 25px;
 }
@@ -18,39 +18,46 @@ body, html{
     height: 100%;
     margin: 0;
 }
-.header-image{
-    background-image: url("images/desert dream.jpg");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-
-
-
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+.btn{
+    border: 2px solid black;
+    background-color: white; 
+    color: black;
+    display: inline-block;
     text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+
+}
+.volgende{
+    border-color: white;
+    color: white;
+    background-color: transparent;
+}
+.volgende:hover{
+    background-image: element('images/desert.jpg');
+    
+}
+.volgende{
+    border-color: black;
+    color: black;
+}
+.volgende:hover{
+    background-image: image("images/desert.jpg");
 }
 
+.foto{
+padding-left: 500px;
+padding-top: 50px;
+} 
 
-
-/* Clear floats */
-.container::after, .row::after{
-    content: "";
-    clear: both;
-    display: table;
+.werchter, line up{
+    max-width: 100%;
+    
 }
-
-.title {
-    color: grey;
-}
-
 
 .division1 {
     background-color: #d3d3d3;
@@ -58,8 +65,39 @@ body, html{
     height: 600px;
     border: 25px white;
     padding: 25px;
-    margin: 25x;
+    margin: 25px;
 }
+.division2 {
+    background-color: #d3d3d3;
+    width: 500px;
+    height: 600px;
+    border: 25px white;
+    padding: 25px;
+    margin: 25px;
+}
+.division3 {
+    background-color: #d3d3d3;
+    width: 500px;
+    height: 600px;
+    border: 25px white;
+    padding: 25px;
+    margin: 25px;
+}
+.division4 {
+    background-color: #d3d3d3;
+    width: 500px;
+    height: 600px;
+    border: 25px white;
+    padding: 25px;
+    margin: 25px;
+}
+.division5 {
+    background-color: #d3d3d3;
+    width: 300px;
+    height: 400px;
+    border: 25px white;
+    padding: 25px;
+    margin: 25px;}
 
 
 .row{
@@ -107,22 +145,41 @@ h1{
     text-align: center;
     text-decoration-color:grey;
     color: #D657C9;
-    font-size: 50px,
+    font-size: 50px;
+    font-family: "Hind", Bold, serif; 
+    margin: auto;
+    padding-top: 20px;
+}
+h2{
+    text-align: left;
+    text-decoration-color:grey;
+    color: #D657C9;
+    font-size: 50px;
+    font-family: 'Hind', Bold, serif; 
 }
 h3{
     color: black;
-    text-align: center;
+    text-align: left;
     font-family: hind, sans-serif;
     font-size: 30px;
+    font-family: 'Hind', Bold, Serif;
 }
 h4{
     color: black;
     text-align: left;
+    font-family: 'Hind', Bold, serif; 
+    font-size: 20px;
 }
 p{
     text-align: left;
     color: black;
+    font-family: 'Arial', serif;
+    font-size: 14px;
+    margin: auto;
+    
 }
+
+
 
 /*content*/
 div.container {
@@ -132,6 +189,67 @@ div.container {
     margin:0 auto;
     background-color: #d3d3d3;
 }
+
+.topnav{
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 500px;
+    padding-left: 100px;
+    float: right;
+
+}
+
+.topnav a{
+    float: left;
+    color: #d3d3d3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+  border-bottom: 2px solid #D657C9;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+}
+
+.icon-bar a{
+    display: block;
+    text-align: center;
+    padding: 16x;
+    transition: all 0.3 ease;
+    color: white;
+    font-size: 20px;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 60px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook, .fa-twitter, .fa-snapchat, .fa-instagram{
+    background: #000000;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+
 
 
 
